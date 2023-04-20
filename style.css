@@ -1,0 +1,296 @@
+.border1{
+    border: 1px groove yellow;
+    background-color: yellow;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    
+}
+.num{
+    padding-top: 80px;
+}
+.row1{
+    width: 100px;
+    height: 100px;
+    background-color: darkslateblue;
+    border: 2px solid darkslateblue;
+    animation: sample1 3s infinite alternate;
+}
+@keyframes sample1{
+    0%{
+        transform: skew(-10deg);
+    }
+    100%{
+        transform: skew(10deg);
+    }
+}
+.row2{
+    width: 100px;
+    height: 100px;
+    background-color: dimgrey;
+    border: 2px solid dimgrey;
+    animation: sample2 3s infinite alternate;
+}
+@keyframes sample2{
+    0%{
+        transform: skew(-10deg);
+    }
+    100%{
+        transform: skew(10deg);
+    }
+}
+.row6{
+    width: 100px;
+    height: 100px;
+    background-color: darkslateblue;
+    border: 2px solid darkslateblue;
+    animation: sample3 2s infinite alternate;
+}
+@keyframes sample3{
+    0%{
+        transform: rotate(90 deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.row3{
+    width: 100px;
+    height: 100px;
+    background-color: dimgrey;
+    border: 2px solid dimgrey;
+    animation: sample4 3s infinite normal;
+}
+@keyframes sample4{
+    0%{
+        transform:scale(1,1)
+    }
+    100%{
+        transform: scale(1,1.4)
+    }}
+
+.row4{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    border: 2px solid brown;
+    animation: sample5 3s infinite alternate;
+}
+@keyframes sample5{
+    0%{
+        transform:scale(1,1)
+    }
+    100%{
+        transform: scale(1.5,0.5)
+    }}
+.row5{
+    width: 100px;
+    height: 100px;
+    background-color:green;
+    border: 2px solid green;
+    animation: sample3 3s infinite alternate;
+}
+@keyframes sample3{
+    0%{
+        transform: rotate(90 deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.box1{
+    display: flex;
+    justify-content: center;
+}
+.box2{
+   margin: 20px;
+   width: 100px;
+   height: 100px;
+   background-color: green;
+   transition: 2s;
+
+}
+.box2:hover{
+    width: 400px;
+}
+
+.box3{
+    margin: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transition: width 2s, height 4s;
+ 
+ }
+ .box3:hover {
+    width: 300px;
+    height: 300px;
+  }
+  .body{
+    border: 5px solid;
+    margin: 0px;
+   
+    border-color:  white green white orange;
+  }
+  .text{
+   margin-left: -50px;
+  }
+  .happy{
+    font-size: 45px;
+    background-color: orange;
+    margin: 2.5;
+    font-weight: bold;
+    color: black;
+    display: inline;
+    position: relative;
+    left: 450px;
+    
+  }
+  .ind{
+    font-size: 45px;
+    background-color: white;
+    margin: 2.5;
+    font-weight: bold;
+    color: black;
+    display: inline;
+    position: relative;
+    left: 450px;
+    
+  }
+  .day{
+    font-size: 45px;
+    background-color:green;
+    margin: 2.5;
+    font-weight: bold;
+    color: black;
+    display: inline;
+    position: relative;
+    left: 450px;
+    
+  }
+  .sky{
+    background-image: url(./sky.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+  }
+  .road{
+    width: 500%;
+    background-image: url(./road.jpg);
+    height: 200px;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: sample 5s infinite linear;
+  }
+  @keyframes sample{
+    100%{
+        transform: translateX(-3400px);
+    }
+    /*
+    0%
+    {
+        transform: translateY(1px);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    70%{
+        transform: translateY(1px);
+    
+  }*/}
+  .city{
+    background-image: url(./city.png);
+    height: 250px;
+    width: 500%;
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+    display: block;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation:city 20s infinite linear;
+  }
+  @keyframes city{
+    100%{
+        transform: translateX(-1400px);
+    }
+  }
+  .car{
+   
+    width: 400px;
+    left: 50%;
+    bottom: 187px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+    
+    
+  }
+  .car img{
+    width: 50%;
+    animation: car 1s infinite linear;
+
+  }
+  
+  @keyframes car{
+    
+    
+    100%
+    {
+        transform: translateY(1px);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    0%{
+        transform: translateY(1px);
+    }
+  }
+  .flag{
+    height: 90px;
+    width: 90px;
+    position: relative;
+    left: 600px;
+    top: 120px;
+    z-index: 2;
+  }
+  .sun{
+    position: relative;
+    bottom: 10px;
+    left: 1200px;
+    z-index: 2;
+    animation: sun 5s infinite linear;
+  }
+  @keyframes sun{
+    100%{
+        transform: translateX(-100px);
+    }
+  }
+  .wheel{
+    left: 50%;
+    bottom: 178px;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+  }
+ .wheel img{
+    width: 50px;
+    height: 50px;
+    animation: wheel 1s infinite linear;
+ }
+@keyframes wheel{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+  
